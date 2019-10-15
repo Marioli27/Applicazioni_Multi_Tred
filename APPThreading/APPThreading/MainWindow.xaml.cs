@@ -27,7 +27,22 @@ namespace APPThreading
 
         private void Btn_Task_Click(object sender, RoutedEventArgs e)
         {
+            //DoWORK();
+            Task.Factory.StartNew(DoWORK);
 
         }
+
+        private void DoWORK()
+        {
+            for (int i = 0; i <= 1000000; i++)
+            {
+                for (int j = 0; j <= 1000000; j++)
+                {
+
+                }
+            }
+            Lbl_Risultato.Content = "Finito";
+        }
+
     }
 }

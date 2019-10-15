@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -67,13 +68,14 @@ namespace APPThreading
                 for (int j = 0; j <= 1000; j++)
                 {
                     Dispatcher.Invoke(()=>AggiornaInterfaccia(j));
+                    Thread.Sleep(100);
                 }
             }
         }
 
         private void AggiornaInterfaccia(int j)
         {
-            Lbl_Risultato.Content = j.ToString();
+            Lbl_Conteggio.Content = j.ToString();
         }
 
     }

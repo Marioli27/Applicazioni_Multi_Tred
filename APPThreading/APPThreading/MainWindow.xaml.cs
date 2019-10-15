@@ -52,5 +52,29 @@ namespace APPThreading
         {
             Lbl_Risultato.Content = "Finito";
         }
+
+
+        private void Btn_Conta_Click(object sender, RoutedEventArgs e)
+        {
+            //DoCount();
+            Task.Factory.StartNew(DoCount);
+        }
+
+        private void DoCount()
+        {
+            for (int i = 0; i <= 1000; i++)
+            {
+                for (int j = 0; j <= 1000; j++)
+                {
+                    Dispatcher.Invoke(()=>AggiornaInterfaccia(j));
+                }
+            }
+        }
+
+        private void AggiornaInterfaccia(int j)
+        {
+            Lbl_Risultato.Content = j.ToString();
+        }
+
     }
 }

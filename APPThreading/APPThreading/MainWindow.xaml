@@ -13,8 +13,10 @@
                 <GradientStop Color="Red" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="Btn_Task" Content="CLICK" HorizontalAlignment="Left" Margin="310,308,0,0" VerticalAlignment="Top" Width="160" Height="52" Click="Btn_Task_Click"/>
-        <Label x:Name="Lbl_Risultato" Content="" HorizontalAlignment="Left" Margin="310,200,0,0" VerticalAlignment="Top" Width="160" Background="#FF0F0303" Foreground="#FFF9F9F9" Height="41"/>
+        <Button x:Name="Btn_Task" Content="CLICK" HorizontalAlignment="Left" Margin="95,285,0,0" VerticalAlignment="Top" Width="175" Height="52" Click="Btn_Task_Click"/>
+        <Label x:Name="Lbl_Risultato" Content="" HorizontalAlignment="Left" Margin="95,190,0,0" VerticalAlignment="Top" Width="175" Background="#FF0F0303" Foreground="#FFF9F9F9" Height="41"/>
+        <Button x:Name="Btn_Conta" Content="CONTA" HorizontalAlignment="Left" Margin="500,285,0,0" VerticalAlignment="Top" Width="180" Height="52" Click="Btn_Conta_Click"/>
+        <Label x:Name="Lbl_Conteggio" Content="" HorizontalAlignment="Left" Margin="500,190,0,0" VerticalAlignment="Top" Width="180" Height="41" Background="#FF0C0B0B" Foreground="White"/>
 
     </Grid>
 </Window>
